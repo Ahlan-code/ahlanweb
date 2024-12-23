@@ -1,0 +1,365 @@
+/* Reset CSS */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya dasar untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: white; /* Warna latar belakang lembut */
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; /* Elemen header ke kiri dan kanan */
+    align-items: center;
+    padding: 28px;
+    background-color: #000000; /* Warna biru utama */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan pada header */
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffcc00; /* Warna kuning pada teks */
+}
+
+header h1 span {
+    color: #fff; /* Tekan kuning hanya pada "Halo, Saya" */
+}
+
+header nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #a09d9d3e;
+    color: #9a9595;
+}
+
+/* Section About */
+.about {
+    display: flex;
+    flex-direction: column; /* Agar gambar dan teks berada dalam kolom */
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* Tinggi bagian about */
+    text-align: center;
+    background-color: #ffffff; /* Warna latar belakang lembut */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    border-radius: 10px; /* Membuat sudut membulat */
+}
+
+.about img {
+    height: 350px;
+    width: auto;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    border: 5px solid #ffffff; /* Border biru */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Bayangan gambar */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi */
+}
+
+.about img:hover {
+    transform: scale(1.1); /* Memperbesar gambar sedikit saat hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Perbesar bayangan */
+    border-color: #85858545; /* Ubah warna border saat hover */
+}
+
+.about h2 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color:  white;
+}
+
+.about p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px; /* Batasi lebar teks */
+    line-height: 1.8; /* Ruang antar baris */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        position: static;
+        margin-top: 15px;
+    }
+
+    .about {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .about img {
+        height: 250px;
+    }
+}
+.services {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px; /* Adjust width as needed */
+}
+
+.service-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-item img {
+  height: 8rem;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.service-container{
+    background-color: #fff;
+}
+
+~~~~
+.judul {
+    text-align: center;
+    margin: 20px 0;
+}
+.form-container {
+    max-width: 600px; /* Ubah nilai ini untuk membuatnya lebih lebar */
+    margin: auto;
+    padding: 100px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 15px;
+    background-color: #4c5baf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.social-links img {
+    height: 8rem;
+    padding: 12px;
+    border-radius: 5px;
+  }
+
+#biodata {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Gaya untuk section social media */
+#social-media {
+    padding: 40px;
+    background-color: #f0f4f8; /* Warna latar belakang yang lembut */
+    text-align: center; /* Memusatkan teks */
+}
+
+/* Gaya untuk judul */
+#social-media h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0f141a; /* Warna teks yang lebih gelap */
+    font-family: 'Arial', sans-serif; /* Font yang lebih modern */
+}
+
+/* Gaya untuk kontainer link sosial */
+.social-links {
+    display: flex;
+    justify-content: center; /* Memusatkan ikon */
+    gap: 20px; /* Jarak antar ikon */
+}
+
+/* Gaya untuk link sosial */
+.social-links a {
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    color: #ffffff; /* Warna ikon */
+    transition: transform 0.3s, color 0.3s; /* Efek transisi saat hover */
+}
+
+/* Efek hover pada link sosial */
+.social-links a:hover {
+    transform: scale(1.1); /* Membesarkan ikon saat hover */
+    color: #ffffff; /* Warna ikon saat hover */
+}
+
+/* Gaya untuk ikon */
+box-icon {
+    width: 40px; /* Ukuran ikon */
+    height: 40px; /* Ukuran ikon */
+}
+/* Gaya untuk section handling */
+.handling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f0f4f8; /* Warna latar belakang yang lebih lembut */
+}
+
+/* Gaya untuk judul */
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Warna teks yang lebih gelap */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Font yang lebih modern */
+}
+
+/* Gaya untuk kontainer gambar */
+.handling > .handling {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Jarak antar gambar */
+    flex-wrap: wrap; /* Membuat gambar responsif */
+}
+
+/* Gaya untuk gambar */
+.handling img {
+    max-width: 300px; /* Ukuran maksimum gambar */
+    width: 100%; /* Memastikan gambar responsif */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    border: 2px solid #3498db; /* Border berwarna biru */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi saat hover */
+}
+
+/* Efek hover pada gambar */
+.handling img:hover {
+    transform: scale(1.05); /* Membesarkan gambar saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+/* Gaya untuk teks di bawah gambar (jika ada) */
+.handling .caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7f8c8d; /* Warna teks yang lebih lembut */
+}
+#biodata h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#biodata p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+#biodata p span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Additional styling for better appearance */
+#biodata p:first-child {
+    margin-top: 0;
+}
+
+#biodata {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
